@@ -62,7 +62,9 @@ Using Google's Gemini AI, Wobble analyzes deadlines, workload, urgency, and proj
 > Replace with dashboard screenshot
 
 ```text
-assets/dashboard.png
+<p align="center">
+  <img src="assets/dashboard.png" width="95%" alt="Dashboard">
+</p>
 ```
 
 ---
@@ -72,7 +74,9 @@ assets/dashboard.png
 > Replace with Rescue Mode screenshot
 
 ```text
-assets/rescue-mode.png
+<p align="center">
+  <img src="assets/rescue-mode.png" width="95%" alt="Dashboard">
+</p>
 ```
 
 ---
@@ -82,20 +86,13 @@ assets/rescue-mode.png
 > Replace with Focus Lab screenshot
 
 ```text
-assets/focus-lab.png
+<p align="center">
+  <img src="assets/focus-lab.png" width="95%" alt="Dashboard">
+</p>
 ```
 
 ---
 
-## Demo
-
-> Replace with demo GIF
-
-```text
-assets/demo.gif
-```
-
----
 
 # 🧠 How It Works
 
