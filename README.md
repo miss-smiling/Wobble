@@ -2,7 +2,7 @@
 
 # 🌌Wobble
 
-### *Projects don't fail suddenly. They wobble first.*
+### *Projects don't fail. They wobble first.*
 
 **An AI-powered Deadline Rescue System that predicts project instability, detects cascading risks, and generates intelligent rescue strategies before deadlines are missed.**
 
