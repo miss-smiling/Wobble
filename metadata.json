@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Memao- AI Deadline Rescue System",
+  "description": "AI Deadline Rescue System with domino cascade simulation, agentic deliverables, voice panic dump, and rescue receipts",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

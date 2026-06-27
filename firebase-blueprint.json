@@ -1,0 +1,80 @@
+{
+  "entities": [
+    {
+      "name": "UserProfile",
+      "description": "User profile and productivity environment preferences",
+      "properties": {
+        "uid": { "type": "string", "description": "User ID" },
+        "displayName": { "type": "string", "description": "User display name from Google" },
+        "name": { "type": "string", "description": "Display name alias" },
+        "email": { "type": "string", "description": "User email address" },
+        "photoURL": { "type": "string", "description": "Profile photo URL from Google" },
+        "theme": { "type": "string", "description": "UI theme choice" },
+        "focusBackground": { "type": "string", "description": "Selected ambient soundscape theme" },
+        "createdAt": { "type": "number", "description": "Account creation timestamp" },
+        "lastLoginAt": { "type": "number", "description": "Last login timestamp" },
+        "lastLogoutAt": { "type": "number", "description": "Last logout timestamp" }
+      }
+    },
+    {
+      "name": "UserUsage",
+      "description": "Monthly AI usage counters per user",
+      "properties": {
+        "uid": { "type": "string", "description": "User ID" },
+        "month": { "type": "string", "description": "Month key YYYY-MM" },
+        "taskGenerations": { "type": "number", "description": "Task generation count this month" },
+        "rescueGenerations": { "type": "number", "description": "Rescue mode generation count this month" }
+      }
+    },
+    {
+      "name": "CachedPlan",
+      "description": "Cached AI-generated plan to avoid duplicate Gemini calls",
+      "properties": {
+        "uid": { "type": "string", "description": "User ID" },
+        "type": { "type": "string", "description": "Plan type: task or rescue" },
+        "input": { "type": "string", "description": "Normalized user input" },
+        "result": { "type": "object", "description": "Cached AI response" },
+        "createdAt": { "type": "number", "description": "Cache creation timestamp" }
+      }
+    },
+    {
+      "name": "Task",
+      "description": "AI structured deadline rescue task",
+      "properties": {
+        "uid": { "type": "string", "description": "User ID owning the task" },
+        "title": { "type": "string", "description": "Task title" },
+        "deadline": { "type": "string", "description": "Task deadline string" },
+        "priority": { "type": "string", "description": "Priority level" },
+        "riskScore": { "type": "number", "description": "Calculated failure risk score 0-100" },
+        "estimatedHours": { "type": "number", "description": "Estimated effort hours" },
+        "status": { "type": "string", "description": "Task status: pending or completed" },
+        "createdAt": { "type": "number", "description": "Creation timestamp" }
+      }
+    }
+  ],
+  "relations": [],
+  "firestore": {
+    "structure": [
+      {
+        "collection": "users",
+        "docId": "userId",
+        "entity": "UserProfile"
+      },
+      {
+        "collection": "tasks",
+        "docId": "taskId",
+        "entity": "Task"
+      },
+      {
+        "collection": "userUsage",
+        "docId": "userId",
+        "entity": "UserUsage"
+      },
+      {
+        "collection": "planCache",
+        "docId": "cacheId",
+        "entity": "CachedPlan"
+      }
+    ]
+  }
+}
