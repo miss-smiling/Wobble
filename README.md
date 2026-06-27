@@ -11,9 +11,8 @@
 <!-- Replace with your banner -->
 
 <p align="center">
-  <img src="assets/banner.png" alt="Wobble Banner" width="100%">
+  <img src="./assets/banner.png" alt="Wobble Banner" width="80%">
 </p>
-
 
 
 </div>
@@ -52,11 +51,6 @@ Using Google's Gemini AI, Wobble analyzes deadlines, workload, urgency, and proj
 ---
 
 ## 📸 Preview
-## 🌊 Banner
-
-<p align="center">
-  <img src="./assets/banner.png" alt="Wobble Banner" width="100%">
-</p>
 
 
 <table>
