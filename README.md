@@ -6,7 +6,7 @@
 
 **An AI-powered Deadline Rescue System that predicts project instability, detects cascading risks, and generates intelligent rescue strategies before deadlines are missed.**
 
-> 🚀 Built for the** VIBE2SHIP(codingNinjasXGoogleForDevelopers**
+> 🚀 Built for the** VIBE2SHIP(codingNinjasXGoogleForDevelopers 2026**
 
 <!-- Replace with your banner -->
 
@@ -313,6 +313,6 @@ Built with ❤️ for the** VIBE2SHIP (codingNinjasXGoogleForDevelopers**
 
 ## ⭐ If you found this project interesting, consider giving it a star!
 
-**Every star helps the project reach more developers and motivates future improvements.**
+**Every star helps the project reach more developers and motivates future improvements.2026**
 
 </div>
