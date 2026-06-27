@@ -52,6 +52,12 @@ Using Google's Gemini AI, Wobble analyzes deadlines, workload, urgency, and proj
 ---
 
 ## 📸 Preview
+## 🌊 Banner
+
+<p align="center">
+  <img src="./assets/banner.png" alt="Wobble Banner" width="100%">
+</p>
+
 
 <table>
 <tr>
@@ -66,17 +72,12 @@ Using Google's Gemini AI, Wobble analyzes deadlines, workload, urgency, and proj
 </td>
 
 <td align="center">
-<b>🎯 Focus Lab</b><br><br>
+<b>🎯 focus-Lab</b><br><br>
 <img src="./assets/focuslab.png" width="300">
 
 </td>
 </tr>
 </table>
-## 🌊 Banner
-
-<p align="center">
-  <img src="./assets/banner.png" alt="Wobble Banner" width="100%">
-</p>
 
 
 
