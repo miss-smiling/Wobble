@@ -6,7 +6,7 @@
 
 **An AI-powered Deadline Rescue System that predicts project instability, detects cascading risks, and generates intelligent rescue strategies before deadlines are missed.**
 
-> 🚀 Built for the** VIBE2SHIP(codingNinjasXGoogleForDevelopers 2026**
+> 🚀 Built for the** VIBE2SHIP(codingNinjasXGoogleForDevelopers 2026**)
 
 <!-- Replace with your banner -->
 
@@ -61,11 +61,11 @@ Using Google's Gemini AI, Wobble analyzes deadlines, workload, urgency, and proj
 
 > Replace with dashboard screenshot
 
-```text
+
 <p align="center">
   <img src="assets/dashboard.png" width="95%" alt="Dashboard">
 </p>
-```
+
 
 ---
 
@@ -73,11 +73,9 @@ Using Google's Gemini AI, Wobble analyzes deadlines, workload, urgency, and proj
 
 > Replace with Rescue Mode screenshot
 
-```text
 <p align="center">
   <img src="assets/rescue-mode.png" width="95%" alt="Dashboard">
 </p>
-```
 
 ---
 
@@ -85,11 +83,9 @@ Using Google's Gemini AI, Wobble analyzes deadlines, workload, urgency, and proj
 
 > Replace with Focus Lab screenshot
 
-```text
 <p align="center">
   <img src="assets/focus-lab.png" width="95%" alt="Dashboard">
 </p>
-```
 
 ---
 
