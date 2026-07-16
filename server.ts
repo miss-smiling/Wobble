@@ -224,21 +224,34 @@ Include 2-4 deliverables relevant to the panic (extension_email, reschedule_emai
 });
 
 // Mount Vite middleware in dev or static files in production
-if (process.env.NODE_ENV !== "production") {
-  const { createServer: createViteServer } = await import("vite");
-  const vite = await createViteServer({
-    server: { middlewareMode: true },
-    appType: "spa",
-  });
-  app.use(vite.middlewares);
-} else {
-  const distPath = path.join(__dirname, "dist");
-  app.use(express.static(distPath));
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(distPath, "index.html"));
+async function startServer() {
+  if (process.env.NODE_ENV !== "production") {
+    const { createServer: createViteServer } = await import("vite");
+
+    const vite = await createViteServer({
+      server: {
+        middlewareMode: true,
+      },
+      appType: "spa",
+    });
+
+    app.use(vite.middlewares);
+  } else {
+    const distPath = path.join(__dirname, "dist");
+
+    app.use(express.static(distPath));
+
+    app.get("*", (_req, res) => {
+      res.sendFile(path.join(distPath, "index.html"));
+    });
+  }
+
+  app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Server running on http://0.0.0.0:${PORT}`);
   });
 }
 
-app.listen(PORT, "0.0.0.0", () => {
-  console.log(`Server running on http://0.0.0.0:${PORT}`);
+startServer().catch((err) => {
+  console.error(err);
+  process.exit(1);
 });
